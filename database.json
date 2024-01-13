@@ -1,3 +1,19 @@
 {
-      "mood" : []
+  "mood": [
+    {
+      "id": 1705186402195,
+      "description": "Siure nie stoi sadek",
+      "type": "bad"
+    },
+    {
+      "id": 1705186408736,
+      "description": "Dzisiaj bez lizania cipki fajnej",
+      "type": "neutral"
+    },
+    {
+      "id": 1705186417220,
+      "description": "W koncu wyslala jak bawi sie cipka",
+      "type": "good"
+    }
+  ]
 }

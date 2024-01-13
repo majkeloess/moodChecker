@@ -1,10 +1,7 @@
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
-
-yargs(hideBin(process.argv))
-      .command('diary', 'opens your mood diary', () => {
-            console.log("Opening your mood diary ...")
-      }).argv;
+import { newMood, erase, removeMood, allMoods } from './mood.js';
+import { startServer } from './server.js';
 
 yargs(hideBin(process.argv))
       .command('neutral <description>', 'adding neutral mood to diary', yargs => {
@@ -12,24 +9,31 @@ yargs(hideBin(process.argv))
                   type: 'string',
             })
       }, async (argv) => {
-
+            const mood = await newMood('neutral', argv.description);
+            console.log(`Neutral mood added! Mood id: ${mood.id}`);
       })
-      .command('good <description>', 'adding neutral mood to diary', yargs => {
+      .command('good <description>', 'adding good mood to diary', yargs => {
             return yargs.positional('mood', {
                   type: 'string',
             })
       }, async (argv) => {
-
+            const mood = await newMood('good', argv.description);
+            console.log(`Good mood added! :D Mood id: ${mood.id}`);
       })
-      .command('bad <description>', 'adding neutral mood to diary', yargs => {
+      .command('bad <description>', 'adding bad mood to diary', yargs => {
             return yargs.positional('mood', {
                   type: 'string',
             })
       }, async (argv) => {
-
+            const mood = await newMood('bad', argv.description);
+            console.log(`Bad mood added! Don't worry everything gonna be alright soon!!! Mood id: ${mood.id}`);
       })
       .command('erase', 'delete your diary', () => { }, async argv => {
-
+            await erase();
+            console.log("Erased your mood diary!");
+      })
+      .command('diary', 'opens your mood diary', () => { }, async argv => {
+            startServer('items');
       })
       .demandCommand(1)
       .parse()
