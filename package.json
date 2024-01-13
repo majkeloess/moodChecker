@@ -1,11 +1,18 @@
 {
   "name": "moodcheckercli",
+  "bin": {
+    "mood": "./index.js"
+  },
+  "type": "module",
   "version": "1.0.0",
   "description": "CLI for tracking your daily mood",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "majkeloess",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
 }
