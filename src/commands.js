@@ -28,7 +28,7 @@ yargs(hideBin(process.argv))
             const mood = await newMood('bad', argv.description);
             console.log(`Bad mood added! Don't worry everything gonna be alright soon!!! Mood id: ${mood.id}`);
       })
-      .command('remove <id>', 'remove mood raport by id', yargs => {
+      .command('remove <id>', 'remove mood by id', yargs => {
             return yargs.positional('id', {
                   type: "number",
             })
@@ -41,7 +41,7 @@ yargs(hideBin(process.argv))
       })
       .command('diary', 'opens your mood diary', () => { }, async argv => {
             const moodList = await allMoods();
-            await startServer();
+            await startServer(moodList);
       })
       .demandCommand(1)
       .parse()

@@ -5,12 +5,75 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>moodChecker</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-      <h1>moodChecker</h1>
-      <div></div>
+      <div class="main">
+            <h1 class="main-text">moodChecker 🙋🏻‍♂️🙅🏼</h1>
+            <div>
+                  <ul>
+                        <!-- PLACEHOLDER -->
+                  </ul>
+            </div>
+      </div>
 </body>
 
 </html>
+
+<style>
+      html,
+      body {
+            font-family: 'Roboto', sans-serif;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+      }
+
+      body {
+            background: linear-gradient(to bottom left, #34D399, #6EE7B7, #D1FAE5);
+      }
+
+      .main-text {
+            font-size: 3vw;
+      }
+
+      .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+      }
+
+      ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+      }
+
+      .list-item {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            padding: 5px;
+      }
+
+      .list-header {
+            margin: 10px;
+            font-size: 2rem;
+      }
+
+      .list-text {
+            margin: 10px;
+            font-size: 1rem;
+      }
+
+      .date {
+            font-size: 0.8rem;
+            padding: 5px;
+            text-align: right;
+      }
+</style>

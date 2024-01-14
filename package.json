@@ -4,11 +4,12 @@
     "mood": "./index.js"
   },
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "CLI for tracking your daily mood",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "npx tailwindcss -i ./style.css -o ./output.css --watch"
   },
   "author": "majkeloess",
   "license": "ISC",
