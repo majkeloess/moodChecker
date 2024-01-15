@@ -1,28 +1,28 @@
 {
   "mood": [
     {
-      "id": 1705186402195,
-      "description": "Siure nie stoi sadek",
-      "type": "bad"
-    },
-    {
-      "id": 1705186408736,
-      "description": "Dzisiaj bez lizania cipki fajnej",
-      "type": "neutral"
-    },
-    {
-      "id": 1705186417220,
-      "description": "W koncu wyslala jak bawi sie cipka",
+      "id": 1705244032842,
+      "description": "Finally completed my CLI project",
       "type": "good"
     },
     {
-      "id": 1705231197073,
-      "description": "Jutro szkolka sadek",
+      "id": 1705244139678,
+      "description": "I don't know how to stary my data science project, thinking about it makes me anxious",
+      "type": "bad"
+    },
+    {
+      "id": 1705244244003,
+      "description": "Yesterday was a great day, I got into Node.js",
+      "type": "good"
+    },
+    {
+      "id": 1705244271169,
+      "description": "It's cold outside today",
       "type": "neutral"
     },
     {
-      "id": 1705232166618,
-      "description": "Kurwa znow z tym pasztetem jebanym",
+      "id": 1705244324569,
+      "description": "Argued with my best friend today, hope everything gonna be alright soon",
       "type": "bad"
     }
   ]
